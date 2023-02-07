@@ -25,5 +25,5 @@ for c in quoteText:
 lst=[]
 for i in range(len(authors)):
   lst.append([f'quote: {quotes[i]}', f'author: {authors[i]}'])
-with open('quotes/quotes.json','w') as f:
+with open('data.json','w') as f:
   json.dump(lst,f,indent=8)
